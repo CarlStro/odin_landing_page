@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 
 .top,
@@ -42,14 +42,15 @@ a {
 }
 
 img {
-    width: 350px;
-    height: auto;
+    flex: initial;
+    height: 300px;
+    width: auto;
     padding-left: 30px;
 }
 
 .head-content {
     display: flex;
-    justify-content: space-between;
+    min-width: 0;
 }
 
 .image-row {
@@ -115,6 +116,7 @@ button,
 
 .quote {
     background-color: #E5E7EB;
+    min-width: 400px;
 }
 
 .quote p {
@@ -173,4 +175,5 @@ button {
     color: #F9FAF8;
     text-align: center;
     padding: 10px;
+    align-self: stretch;
 }
